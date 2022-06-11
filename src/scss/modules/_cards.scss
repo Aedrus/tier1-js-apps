@@ -1,0 +1,56 @@
+// -------------------------
+// Card & Modal Styles
+// --------------------------
+
+// =======
+// Cards
+// =======
+
+
+// =======
+// Modals
+// =======
+.modal-container {
+  position: fixed;
+  display: none;
+  top: 28%;
+  left: 28%;
+  background: $white;
+  color: $black;
+  border: 1px solid hsl(0%, 0%, 100%);
+  border-radius: 3px;
+  z-index: 3;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+
+  &.modal-active {
+    display: block;
+    opacity: 100;
+  }
+
+  
+}
+
+#modal-body {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0%;
+  pointer-events: none;
+  z-index: 2000;
+  overflow: scroll;
+
+  &.overlay-active{
+    opacity: 50%;
+    z-index: 2;
+    pointer-events: all;
+  }
+}

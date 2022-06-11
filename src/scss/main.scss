@@ -1,0 +1,27 @@
+// -- Main SCSS file to collect all partials and compile into CSS.
+// =================================================================================================
+// ## Load order matters. Some partials must be imported first before they can be accessed.
+// =================================================================================================
+// Import Syntax | @import 'folder/file';
+// Some extra syntax are: ~ = root of node_modules  |  ./ = in the root folder ===============================================================================================
+@import 'utilities/variables';
+@import '~bootstrap/scss/bootstrap';
+
+@import 'utilities/functions';
+@import 'utilities/mixins';
+@import 'utilities/breakpoints';
+@import 'base/base';
+@import 'base/type';
+@import 'base/review';
+@import 'layout/flex';
+@import 'layout/grid';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/mainContent';
+@import 'layout/navigation';
+@import 'modules/buttons';
+@import 'modules/cards';
+@import 'modules/carousel';
+@import 'modules/dropdown';
+@import 'modules/forms';
+@import 'modules/media';

@@ -1,0 +1,85 @@
+// -----------------------------------------------
+// SASS Variables - Reuse code by invoking a named variable.
+// -----------------------------------------------
+@use '~bootstrap/scss/bootstrap' as *;
+// =========================================
+// Colors
+// =========================================
+$color-name: hsl(200, 100%, 50%);
+
+
+// =========================================
+// Typography
+// =========================================
+
+// SASS Maps - These hold pairs of keys and values, which can later be used. This is similar to javascript objects. Begins with a name for the map and then parenthesis for the key/value pairs
+$theme-colors: (
+  'primary': orange,
+  'secondary': blue,
+  'tertiary': red,
+  'white': white,
+  'black': black,
+);
+
+@each $color in $theme-colors {
+  .bg-#{$color} {
+    background-color: $color;
+  }
+}
+
+// SASS Lists - we can create a list of values in one variable by seperating them with a space or comma. This is useful settingup maps and other complex design libraries.
+$displays: none, block, flex, grid;
+
+// @each - Allows us to loop through a statements values and perform some action for each.
+@each $value in $displays {
+  .d-#{$value} {
+    display: $value;
+  }
+}
+
+// Utility Classes - A more advanced method of creating new classes using maps, lists, and other fields.
+// All utilities are merged and stored within the utilities variable.
+$utilities: ();
+// Here we can merge specific utilities into the main utilities variable.
+$utilities: map-merge( 
+  $utilities, 
+  (
+    'align': (
+      property: vertical-align,
+      class: align,
+      values: 'top bottom right left'
+    )
+  )
+);
+
+$fixed-widths: (
+  1: .25rem,
+  2: .5rem,
+  3: .75rem
+);
+// In the case of modifying or ammending to previously created utilities, we can use the following.
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'align': map-merge(
+      map-get($utilities, 'align'),
+      (
+        values: append(
+          map-get(map-get($utilities, 'align'), 'values'), sub
+        )
+      )
+    ),
+// We can also create custom classes.
+    "fixed-width": (
+      property: width,
+      class: f-w,
+      values: map-merge($fixed-widths, (4: 4))
+    ),
+  )
+);
+
+
+
+// 
+$input-btn-border-width: 0px;

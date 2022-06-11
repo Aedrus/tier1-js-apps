@@ -1,0 +1,19 @@
+{
+  "name": "testing-bootstrap-03",
+  "version": "1.0.0",
+  "description": "//Starting readme file.",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  }
+}

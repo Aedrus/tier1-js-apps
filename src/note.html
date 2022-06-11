@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/main.scss">
+  <title>Note App</title>
+</head>
+<body>
+  <header class="container m-auto p-3">
+    <nav class="text-center">
+      <a href="./index.html">To-Do List</a>
+      <a href="./expense.html">Expense App</a>
+      <a href="./note.html">Note Taking App</a>
+      <a href="./clock.html">Clock</a>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <div id="overlay"></div>
+  <div id="main-modal" class="modal-container container col-6">
+    <div class="d-flex justify-content-end pt-3 pe-2">
+      <button id="modal-close">X</button>
+    </div>
+    <div id="modal-heading" class="modal-h text-center ">
+      <h3 id="modal-heading-text"></h3>
+    </div>
+    <div id="modal-body" class="modal-b p-3">
+      <p id="modal-body-text"></p>
+    </div>
+  </div>
+  <div id="app-header" class="container m-auto p-3 col-12 text-center">
+    <div class="container col-6">
+      <h1>Note Tracker App</h1>
+      <p>This handy app allows you to store notes and then view them later. Simply enter your note in the box below and click add.</p>
+    </div>
+  </div>
+  <div id="app-input" class="container col-12">
+    <div class="container col-12">
+      <label for="note">Note:</label>
+      <textarea name="note" id="note" cols="12" rows="4" placeholder="Write note here..."></textarea>
+    </div>
+  </div>
+  <div id="app-add" class="container m-auto p-4 col-12 text-center">
+    <div class="container col-4">
+      <button id="add-btn" class="col-12 btn btn-primary">Add Note</button>
+    </div>
+  </div>
+  <div id="app-archive" class="container bg-secondary col-12 p-4 m-auto">
+    <!-- Title -->
+    <h2 class="text-center pb-4">Note List</h2>
+    <!-- Message -->
+    <p id="empty-msg">You don't have any notes yet...</p>
+    <!-- Cards -->
+    <!-- <div class="card text-black col-12 mb-4">
+      <div class="card-body">
+        <h3 class="card-title">title</h3>
+        <p class="card-text">Text</p>
+        <button class="btn btn-warning">View</button>
+      </div>
+    </div> -->
+    <!-- Archive End -->
+  </div>
+  <!-- End -->
+  <script type="module" src="./js/main04.js" defer></script>
+</body>
+</html>

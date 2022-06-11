@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.b10d73a7.css">
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <header class="container m-auto p-3">
+    <nav class="text-center">
+      <a href="/index.html">To-Do List</a>
+      <a href="/expense.html">Expense App</a>
+      <a href="/note.html">Note Taking App</a>
+      <a href="/clock.html">Clock</a>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <div class="container col-6">
+    <h2 class="text-center">Expense Tracker</h2>
+    <p class="text-center">Tracks expenses in a simple and easy to read table. Simply input the name of vendor, date of transaction, and amount paid. It just works!</p>
+  </div>
+    <div id="exp-input-group" class="container col-6 mt-4">
+      <label for="vendor">Vendor / Transaction</label>
+      <input id="vendor" type="text" class="col-12 mb-3">
+      <label for="date">Transaction Date</label>
+      <input id="date" type="date" class="col-12 mb-3">
+      <label for="amount">Amount</label>
+      <input id="amount" type="number" class="col-12 mb-3">
+    </div>
+    <div class="container col-12 d-flex justify-content-center">
+      <button id="exp-add-btn" class="btn btn-primary mt-4 mb-4">Add Expense</button>
+    </div>
+    <div id="exp-table" class="container col-6 text-center mt-4">
+      <table class="col-12">
+        <tr class="col-12 p-2">
+          <th class="col-3">Vendor</th>
+          <th class="col-4">Date</th>
+          <th class="col-2">Amount</th>
+          <th class="col-3"></th>
+        </tr>
+      </table>
+      <div id="empty-msg" class="col-12">
+        <p>Your tracker is empty.</p>
+      </div>
+    </div>
+  <!-- End -->
+  <script src="/expense.ec68ea39.js" defer=""></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.b10d73a7.css">
+  <title>Digital Clock</title>
+</head>
+<body>
+  <header class="container m-auto p-3">
+    <nav class="text-center">
+      <a href="/index.html">To-Do List</a>
+      <a href="/expense.html">Expense App</a>
+      <a href="/note.html">Note Taking App</a>
+      <a href="/clock.html">Clock</a>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <div id="title-wrapper" class="container col-12">
+    <div class="container text-center p-2 col-12">
+      <h1>Digital Clock</h1>
+      <p>A simple digital clock that displays your local time in either 12 (Standard) or 24 hour (Military) format.</p>
+    </div>
+  </div>
+  <div id="clock-wrapper" class="container text-center p-3 col-12">
+      <h2 id="clock12" class="display-1"><span id="hour">0</span>:<span id="minute">0</span>:<span id="second">0</span></h2>
+      <h2 id="clock24" class="hidden display-1"><span id="hour">0</span>:<span id="minute">0</span>:<span id="second">0</span></h2>
+  </div>
+  <div id="date-wrapper" class="container">
+      <h2 id="date"></h2>
+  </div>
+  <div id="time-button" class="container col-12">
+    <div class="container col-12 d-flex justify-content-center">
+      <button id="military-btn" class="btn btn-primary">Change to Military Time</button>
+    </div>
+  </div>
+  <!-- End -->
+  <script src="/clock.177df0f7.js" defer=""></script>
+</body>
+</html>

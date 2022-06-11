@@ -1,0 +1,43 @@
+// -------------------------
+// Global Styles & Resets
+// --------------------------
+
+body {
+  background: hsl(200deg, 10%, 15%);
+  color: white;
+  height: 2000px;
+  font-weight: 400;
+}
+
+// =========
+// Id Styles
+// =========
+#todo-result {
+  background: hsl(200deg, 10%, 30%);
+}
+
+#exp-table {
+  background: hsl(200deg, 10%, 20%);
+
+}
+
+// ============
+// Class Styles
+// ============
+
+.under {
+  z-index: 1;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}

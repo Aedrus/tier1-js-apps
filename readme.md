@@ -11,3 +11,9 @@ This repository consists of a collection of simple JavaScript Apps written with 
 * [x] Bootstrap 5
 * [x] Date() Data Constructor
 * [x] and more.
+
+## Applications
+1. ToDo App
+2. Expense Tracker App
+3. Note Taking/Writing App
+4. Digital Clock App
